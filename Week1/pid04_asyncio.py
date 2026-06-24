@@ -15,9 +15,9 @@ async def make_coffee(customer_name):
     
     task_id = id(current_task)
 
-    print(f"{ctime}| [PID: {pid}] [TID: {thread_id}] [Async Task ID: {task_id}] [Task Name: {task_name}] กำลังชงกาแฟให้ ลูกค้า {customer_name}..." )
+    print(f"{ctime()}| [PID: {pid}] [TID: {thread_id}] [Async Task ID: {task_id}] [Task Name: {task_name}] กำลังชงกาแฟให้ ลูกค้า {customer_name}..." )
     await  asyncio.sleep(5) #บล็อกการทำงานของ thread นี้ไว้ 5 วินาที
-    print(f"{ctime}| [PID: {pid}] [TID: {thread_id}] [Async Task ID: {task_id}] [Task Name: {task_name}] ลูกค้า {customer_name} ได้รับกาแฟแล้ว!" )
+    print(f"{ctime()}| [PID: {pid}] [TID: {thread_id}] [Async Task ID: {task_id}] [Task Name: {task_name}] ลูกค้า {customer_name} ได้รับกาแฟแล้ว!" )
     pass   
 
 async def main():

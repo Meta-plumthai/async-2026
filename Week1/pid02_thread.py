@@ -8,9 +8,9 @@ def make_coffee(customer_name):
     thread_id = threading.current_thread().native_id
     thread_name = threading.current_thread().name
 
-    print(f"{ctime}| [PID: {pid}] [TID: {thread_id}] [Thread Name: {thread_name}] กำลังชงกาแฟให้ ลูกค้า {customer_name}..." )
+    print(f"{ctime()}| [PID: {pid}] [TID: {thread_id}] [Thread Name: {thread_name}] กำลังชงกาแฟให้ ลูกค้า {customer_name}..." )
     sleep(5) #บล็อกการทำงานของ thread นี้ไว้ 5 วินาที
-    print(f"{ctime}| [PID: {pid}] [TID: {thread_id}] [Thread Name: {thread_name}] ลูกค้า {customer_name} ได้รับกาแฟแล้ว!" )
+    print(f"{ctime()}| [PID: {pid}] [TID: {thread_id}] [Thread Name: {thread_name}] ลูกค้า {customer_name} ได้รับกาแฟแล้ว!" )
     pass
 
 def main():
