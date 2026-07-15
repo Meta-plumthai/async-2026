@@ -4,7 +4,7 @@ from time import ctime, time
 from food_utils import send_order_to_kitchen
 
 async def main():
-    MY_STUDENT_ID = "6720301001"
+    MY_STUDENT_ID = "6720301002"
     print(f"{ctime()} | --- [Task 3] Practice using wait (FIRST_COMPLETED) ---")
     start_time = time()
 
