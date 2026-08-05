@@ -37,9 +37,8 @@ async def main():
         #แปลง Corotine ให้เป็น task  เพื่อให้ event loop บริหาร และตั้งชื่อได้
         task = asyncio.create_task(coro, name=f'Task-{customer}')
         tasks.append(task)
-    
+        
     await asyncio.gather(*tasks)
-
     duration = time() - start_time
     print(f"{ctime()} | ใช้เวลารวมทั้งหมด: {duration:.2f} วินาที")
 
